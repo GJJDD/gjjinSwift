@@ -9,10 +9,10 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate {
 
     var window: UIWindow?
-
+    let takePhotoViewController = GJJTakePhotoViewController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -27,34 +27,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setuptabBarController() -> UIViewController {
         
         let inTabBarController = UITabBarController()
+        inTabBarController.delegate = self
         inTabBarController.tabBar.backgroundColor = UIColor.white()
         inTabBarController.tabBar.tintColor = UIColor.init(red: 220/255.0, green: 92/255.0, blue: 108/255.0, alpha: 1)
         // 关注
-        let aboutController = UIViewController()
-        aboutController.view.backgroundColor = UIColor.red()
+        let aboutController = GJJAboutViewController()
+
         aboutController.title = "关注"
         
         aboutController.tabBarItem.image = UIImage.init(named: "grayfriend")
         aboutController.tabBarItem.selectedImage = UIImage.init(named: "redfriend")
         // 发现
-        let findController = UIViewController()
+        let findController = GJJFindViewController()
         findController.title = "发现"
         findController.tabBarItem.image = UIImage.init(named: "graydiscover")
         findController.tabBarItem.selectedImage = UIImage.init(named: "reddiscover")
         
         // 拍照
-        let takePhotoController = UIViewController()
+        let takePhotoController = GJJTakePhotoViewController()
         takePhotoController.tabBarItem.image = UIImage.init(named: "paizhao")
   
-
-        
         // in记
-        let inController = UIViewController()
+        let inController = GJJInViewController()
         inController.title = "in记"
         inController.tabBarItem.image = UIImage.init(named: "grayinji")
         inController.tabBarItem.selectedImage = UIImage.init(named: "redinji")
         // 中心
-        let centerController = UIViewController()
+        let centerController = GJJCenterViewController()
         centerController.title = "中心"
         centerController.tabBarItem.image = UIImage.init(named: "graycenter")
         centerController.tabBarItem.selectedImage = UIImage.init(named: "redcenter")
@@ -70,6 +69,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarItem = inTabBarController.tabBar.items?[2]
         tabBarItem?.imageInsets = UIEdgeInsets.init(top: -3, left: 0, bottom: 3, right: 0)
         
+        
+        aboutController.view.backgroundColor = UIColor.red()
+        
+        findController.view.backgroundColor = UIColor.purple()
+        
+        inController.view.backgroundColor = UIColor.orange()
+        
+        centerController.view.backgroundColor = UIColor.white()
+        
+        takePhotoController.view.backgroundColor = UIColor.blue()
 
         return inTabBarController
     }
@@ -116,6 +125,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return imageView;
     }
 
+    
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        
+        if viewController.classForCoder.isSubclass(of: GJJTakePhotoViewController.classForCoder()) {
+            
+            debugPrint("点我了")
+        
+            viewController.present(takePhotoViewController, animated: true, completion: {
+                
+            })
+            return false
+        }
+        return true
+
+    }
+    
+    
+    
+   
 }
 
 

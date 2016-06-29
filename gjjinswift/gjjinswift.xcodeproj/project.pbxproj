@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180451F61D237C9600A3B145 /* GJJLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180451F51D237C9600A3B145 /* GJJLaunchViewController.swift */; };
+		185B68581D23CF260095C60D /* GJJAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B68571D23CF260095C60D /* GJJAboutViewController.swift */; };
+		185B685D1D23CF470095C60D /* GJJCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B685C1D23CF470095C60D /* GJJCenterViewController.swift */; };
+		185B685F1D23CF580095C60D /* GJJFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B685E1D23CF580095C60D /* GJJFindViewController.swift */; };
+		185B68611D23CF660095C60D /* GJJInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B68601D23CF660095C60D /* GJJInViewController.swift */; };
+		185B68671D23D00E0095C60D /* GJJTakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B68661D23D00E0095C60D /* GJJTakePhotoViewController.swift */; };
 		18DB81531D22249000C3368E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB81521D22249000C3368E /* AppDelegate.swift */; };
 		18DB815A1D22249100C3368E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DB81591D22249100C3368E /* Assets.xcassets */; };
 		18DB815D1D22249100C3368E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DB815B1D22249100C3368E /* LaunchScreen.storyboard */; };
@@ -33,7 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		180451F51D237C9600A3B145 /* GJJLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJLaunchViewController.swift; sourceTree = "<group>"; };
+		185B68571D23CF260095C60D /* GJJAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJAboutViewController.swift; sourceTree = "<group>"; };
+		185B685C1D23CF470095C60D /* GJJCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJCenterViewController.swift; sourceTree = "<group>"; };
+		185B685E1D23CF580095C60D /* GJJFindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJFindViewController.swift; sourceTree = "<group>"; };
+		185B68601D23CF660095C60D /* GJJInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJInViewController.swift; sourceTree = "<group>"; };
+		185B68661D23D00E0095C60D /* GJJTakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJTakePhotoViewController.swift; sourceTree = "<group>"; };
 		18DB814F1D22249000C3368E /* gjjinswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gjjinswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DB81521D22249000C3368E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18DB81591D22249100C3368E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +80,178 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185B68491D23CE920095C60D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				185B68621D23CFA60095C60D /* TakePhoto */,
+				185B684A1D23CE920095C60D /* About */,
+				185B684E1D23CE920095C60D /* Center */,
+				185B684F1D23CE920095C60D /* Find */,
+				185B68531D23CE920095C60D /* In */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		185B684A1D23CE920095C60D /* About */ = {
+			isa = PBXGroup;
+			children = (
+				185B684B1D23CE920095C60D /* Controller */,
+				185B684C1D23CE920095C60D /* Model */,
+				185B684D1D23CE920095C60D /* View */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		185B684B1D23CE920095C60D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185B68571D23CF260095C60D /* GJJAboutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185B684C1D23CE920095C60D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185B684D1D23CE920095C60D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185B684E1D23CE920095C60D /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				185B68591D23CF3B0095C60D /* Controller */,
+				185B685A1D23CF3B0095C60D /* Model */,
+				185B685B1D23CF3B0095C60D /* View */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		185B684F1D23CE920095C60D /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				185B68501D23CE920095C60D /* Controller */,
+				185B68511D23CE920095C60D /* Model */,
+				185B68521D23CE920095C60D /* View */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		185B68501D23CE920095C60D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185B685E1D23CF580095C60D /* GJJFindViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185B68511D23CE920095C60D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185B68521D23CE920095C60D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185B68531D23CE920095C60D /* In */ = {
+			isa = PBXGroup;
+			children = (
+				185B68541D23CE920095C60D /* Controller */,
+				185B68551D23CE920095C60D /* Model */,
+				185B68561D23CE920095C60D /* View */,
+			);
+			path = In;
+			sourceTree = "<group>";
+		};
+		185B68541D23CE920095C60D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185B68601D23CF660095C60D /* GJJInViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185B68551D23CE920095C60D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185B68561D23CE920095C60D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185B68591D23CF3B0095C60D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185B685C1D23CF470095C60D /* GJJCenterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185B685A1D23CF3B0095C60D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185B685B1D23CF3B0095C60D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185B68621D23CFA60095C60D /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				185B68631D23CFA60095C60D /* Controller */,
+				185B68641D23CFA60095C60D /* Model */,
+				185B68651D23CFA60095C60D /* View */,
+			);
+			path = TakePhoto;
+			sourceTree = "<group>";
+		};
+		185B68631D23CFA60095C60D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185B68661D23D00E0095C60D /* GJJTakePhotoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185B68641D23CFA60095C60D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185B68651D23CFA60095C60D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		18DB81461D22249000C3368E = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +275,8 @@
 		18DB81511D22249000C3368E /* gjjinswift */ = {
 			isa = PBXGroup;
 			children = (
+				185B68491D23CE920095C60D /* Classes */,
 				18DB81521D22249000C3368E /* AppDelegate.swift */,
-				180451F51D237C9600A3B145 /* GJJLaunchViewController.swift */,
 				18DB81591D22249100C3368E /* Assets.xcassets */,
 				18DB815B1D22249100C3368E /* LaunchScreen.storyboard */,
 				18DB815E1D22249100C3368E /* Info.plist */,
@@ -258,8 +438,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185B685D1D23CF470095C60D /* GJJCenterViewController.swift in Sources */,
+				185B685F1D23CF580095C60D /* GJJFindViewController.swift in Sources */,
+				185B68581D23CF260095C60D /* GJJAboutViewController.swift in Sources */,
+				185B68611D23CF660095C60D /* GJJInViewController.swift in Sources */,
+				185B68671D23D00E0095C60D /* GJJTakePhotoViewController.swift in Sources */,
 				18DB81531D22249000C3368E /* AppDelegate.swift in Sources */,
-				180451F61D237C9600A3B145 /* GJJLaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

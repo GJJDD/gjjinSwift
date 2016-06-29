@@ -1,5 +1,5 @@
 //
-//  GJJLaunchViewController.swift
+//  GJJAboutViewController.swift
 //  gjjinswift
 //
 //  Created by apple on 2016/6/29.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GJJLaunchViewController: UIViewController {
+class GJJAboutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,11 @@ class GJJLaunchViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-      
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
 
     /*
     // MARK: - Navigation
