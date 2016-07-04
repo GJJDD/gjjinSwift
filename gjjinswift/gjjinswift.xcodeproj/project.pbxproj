@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1815B99E1D24BE10003E1BC8 /* GJJTakePhotoTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815B99D1D24BE10003E1BC8 /* GJJTakePhotoTabbarViewController.swift */; };
 		185B68581D23CF260095C60D /* GJJAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B68571D23CF260095C60D /* GJJAboutViewController.swift */; };
 		185B685D1D23CF470095C60D /* GJJCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B685C1D23CF470095C60D /* GJJCenterViewController.swift */; };
 		185B685F1D23CF580095C60D /* GJJFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B685E1D23CF580095C60D /* GJJFindViewController.swift */; };
 		185B68611D23CF660095C60D /* GJJInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B68601D23CF660095C60D /* GJJInViewController.swift */; };
 		185B68671D23D00E0095C60D /* GJJTakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B68661D23D00E0095C60D /* GJJTakePhotoViewController.swift */; };
+		188B87611D260F58007BBBDC /* GJJLaunchAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B87601D260F58007BBBDC /* GJJLaunchAdViewController.swift */; };
+		188B87631D26109C007BBBDC /* GJJLaunchAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B87621D26109C007BBBDC /* GJJLaunchAdView.swift */; };
 		18DB81531D22249000C3368E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB81521D22249000C3368E /* AppDelegate.swift */; };
 		18DB815A1D22249100C3368E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DB81591D22249100C3368E /* Assets.xcassets */; };
 		18DB815D1D22249100C3368E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DB815B1D22249100C3368E /* LaunchScreen.storyboard */; };
 		18DB81681D22249100C3368E /* gjjinswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB81671D22249100C3368E /* gjjinswiftTests.swift */; };
 		18DB81731D22249100C3368E /* gjjinswiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB81721D22249100C3368E /* gjjinswiftUITests.swift */; };
+		18E90BF11D2A075C00E37715 /* GJJTabBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E90BF01D2A075C00E37715 /* GJJTabBarConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1815B99D1D24BE10003E1BC8 /* GJJTakePhotoTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJTakePhotoTabbarViewController.swift; sourceTree = "<group>"; };
 		185B68571D23CF260095C60D /* GJJAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJAboutViewController.swift; sourceTree = "<group>"; };
 		185B685C1D23CF470095C60D /* GJJCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJCenterViewController.swift; sourceTree = "<group>"; };
 		185B685E1D23CF580095C60D /* GJJFindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJFindViewController.swift; sourceTree = "<group>"; };
 		185B68601D23CF660095C60D /* GJJInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJInViewController.swift; sourceTree = "<group>"; };
 		185B68661D23D00E0095C60D /* GJJTakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJTakePhotoViewController.swift; sourceTree = "<group>"; };
+		188B87601D260F58007BBBDC /* GJJLaunchAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJLaunchAdViewController.swift; sourceTree = "<group>"; };
+		188B87621D26109C007BBBDC /* GJJLaunchAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJJLaunchAdView.swift; sourceTree = "<group>"; };
 		18DB814F1D22249000C3368E /* gjjinswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gjjinswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DB81521D22249000C3368E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18DB81591D22249100C3368E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +60,7 @@
 		18DB816E1D22249100C3368E /* gjjinswiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gjjinswiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DB81721D22249100C3368E /* gjjinswiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gjjinswiftUITests.swift; sourceTree = "<group>"; };
 		18DB81741D22249100C3368E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E90BF01D2A075C00E37715 /* GJJTabBarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GJJTabBarConfig.swift; path = Classes/GJJTabBarConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 		185B68491D23CE920095C60D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				188B875C1D260F32007BBBDC /* LaunchAd */,
 				185B68621D23CFA60095C60D /* TakePhoto */,
 				185B684A1D23CE920095C60D /* About */,
 				185B684E1D23CE920095C60D /* Center */,
@@ -234,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				185B68661D23D00E0095C60D /* GJJTakePhotoViewController.swift */,
+				1815B99D1D24BE10003E1BC8 /* GJJTakePhotoTabbarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,6 +258,39 @@
 		185B68651D23CFA60095C60D /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		188B875C1D260F32007BBBDC /* LaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				188B875D1D260F32007BBBDC /* Controller */,
+				188B875E1D260F32007BBBDC /* Model */,
+				188B875F1D260F32007BBBDC /* View */,
+			);
+			path = LaunchAd;
+			sourceTree = "<group>";
+		};
+		188B875D1D260F32007BBBDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				188B87601D260F58007BBBDC /* GJJLaunchAdViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		188B875E1D260F32007BBBDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		188B875F1D260F32007BBBDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				188B87621D26109C007BBBDC /* GJJLaunchAdView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,6 +320,7 @@
 			children = (
 				185B68491D23CE920095C60D /* Classes */,
 				18DB81521D22249000C3368E /* AppDelegate.swift */,
+				18E90BF01D2A075C00E37715 /* GJJTabBarConfig.swift */,
 				18DB81591D22249100C3368E /* Assets.xcassets */,
 				18DB815B1D22249100C3368E /* LaunchScreen.storyboard */,
 				18DB815E1D22249100C3368E /* Info.plist */,
@@ -439,8 +483,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				185B685D1D23CF470095C60D /* GJJCenterViewController.swift in Sources */,
+				188B87631D26109C007BBBDC /* GJJLaunchAdView.swift in Sources */,
 				185B685F1D23CF580095C60D /* GJJFindViewController.swift in Sources */,
+				18E90BF11D2A075C00E37715 /* GJJTabBarConfig.swift in Sources */,
+				1815B99E1D24BE10003E1BC8 /* GJJTakePhotoTabbarViewController.swift in Sources */,
 				185B68581D23CF260095C60D /* GJJAboutViewController.swift in Sources */,
+				188B87611D260F58007BBBDC /* GJJLaunchAdViewController.swift in Sources */,
 				185B68611D23CF660095C60D /* GJJInViewController.swift in Sources */,
 				185B68671D23D00E0095C60D /* GJJTakePhotoViewController.swift in Sources */,
 				18DB81531D22249000C3368E /* AppDelegate.swift in Sources */,
