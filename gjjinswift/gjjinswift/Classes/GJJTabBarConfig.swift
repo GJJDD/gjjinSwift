@@ -9,12 +9,15 @@
 import UIKit
 
 class GJJTabBarConfig: NSObject {
-
+    lazy var takePhotoViewController:GJJTakePhotoViewController = {
+        GJJTakePhotoViewController()
+    }()
     
     
-    internal func setuptabBarController() -> UITabBarController {
+    func setuptabBarController() -> UITabBarController {
         
         let inTabBarController = UITabBarController()
+//        inTabBarController.delegate = self
         inTabBarController.tabBar.backgroundColor = UIColor.white()
         inTabBarController.tabBar.tintColor = UIColor.init(red: 220/255.0, green: 92/255.0, blue: 108/255.0, alpha: 1)
         // 关注
@@ -114,6 +117,19 @@ class GJJTabBarConfig: NSObject {
     
     
     
-  
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        
+        if viewController.classForCoder.isSubclass(of: GJJTakePhotoTabbarViewController.classForCoder()) {
+            
+            debugPrint("点我了")
+            
+            viewController.present(takePhotoViewController, animated: true, completion: {
+                
+            })
+            return false
+        }
+        return true
+        
+    }
 
 }

@@ -12,10 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate {
 
     var window: UIWindow?
-  
     lazy var takePhotoViewController:GJJTakePhotoViewController = {
         GJJTakePhotoViewController()
-    }()
+        }()
+    
     
     
 
@@ -24,13 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate
         self.window = UIWindow.init(frame: UIScreen.main().bounds)
         
         if false { // 直接进入主页
-            let inTabBarViewController: UITabBarController = GJJTabBarConfig().setuptabBarController()
-            inTabBarViewController.delegate = self
-            self.window?.rootViewController = inTabBarViewController
-            
+            let inTabBarController: UITabBarController = GJJTabBarConfig().setuptabBarController()
+            inTabBarController.delegate = self;
+            self.window?.rootViewController = inTabBarController
         } else {
             // 开启广告页面
             self.window?.rootViewController = GJJLaunchAdViewController()
+    
         }
         
      
@@ -39,22 +39,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate
         return true
     }
     
-    
-        
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         
         if viewController.classForCoder.isSubclass(of: GJJTakePhotoTabbarViewController.classForCoder()) {
             
             debugPrint("点我了")
-            
+        
             viewController.present(takePhotoViewController, animated: true, completion: {
                 
             })
             return false
         }
         return true
-        
+
     }
+    
    
 }
 
